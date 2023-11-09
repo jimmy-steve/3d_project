@@ -1,24 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import { Route, Routes, useNavigate, useLocation } from "react-router-dom";
+import  Navbar  from './components/Navbar';
+import styled from "styled-components";
+import Content from './components/Content';
+import Home from './components/Home';
+import Who from './components/Who';
+import EarthComponent from './components/EarthComponent';
+import ContactForm from './components/ContactForm';
+import ContactForm3d  from "./components/ContactForm3d";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="App">
+          <Routes>
+              <Route path="Features1" element={<Content />} />
+              <Route path="who" element={<Who />} />
+              <Route path="*" element={<Home />} />
+              <Route path="/earth" element={<EarthComponent />} />
+              <Route path="/contact" element={<ContactForm />} />
+              <Route path="/contact3d" element={<ContactForm3d />} />
+          </Routes>
+      </div>
   );
 }
 
