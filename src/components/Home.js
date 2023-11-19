@@ -26,11 +26,10 @@ function Home() {
     return (
         <Container>
             <StyledNavbar />
-            <h1>Home</h1>
             <CanvasContainer>
                 <Canvas>
                     <Suspense fallback={null}>
-                        <Earth />
+                        <Earth/>
                     </Suspense>
                 </Canvas>
             </CanvasContainer>

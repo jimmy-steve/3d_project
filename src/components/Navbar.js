@@ -8,7 +8,7 @@ const Navbar = () => {
 
 
     return (
-        <nav className="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <nav className="navbar navbar-expand-lg" data-bs-theme="dark">
             <div className="container-fluid">
                 <Link className="nav-link navbar-brand" to="/">
                     <FontAwesomeIcon className="me-2" icon={faSkullCrossbones} />Super 3D
@@ -43,15 +43,14 @@ const Navbar = () => {
                         </li>
                     </ul>
                     <ul className="navbar-nav ms-auto">
-                        <li className="ms-2 me-3"><FontAwesomeIcon icon={faEnvelope} size="2xl" /></li>
                         <li className="ms-2 me-3">
                             <Link className="nav-link" to={{ pathname: "/contact3d", state: { from: location.pathname } }}>
-                                <FontAwesomeIcon icon={faSkullCrossbones} size="2xl" />
+                                <FontAwesomeIcon icon={faSkullCrossbones} />
                             </Link>
                         </li>
                         <li className="ms-2 me-3">
                             <Link className="nav-link" to={{ pathname: "/contact", state: { from: location.pathname } }}>
-                                <FontAwesomeIcon icon={faContactBook} size="xl" />
+                                <FontAwesomeIcon icon={faContactBook} />
                             </Link>
                         </li>
                     </ul>
