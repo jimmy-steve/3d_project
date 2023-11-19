@@ -8,6 +8,9 @@ import Who from './components/Who';
 import EarthComponent from './components/EarthComponent';
 import ContactForm from './components/ContactForm';
 import ContactForm3d  from "./components/ContactForm3d";
+import About from './components/About';
+import Resume from './components/Resume';
+import Projects from './components/Projects';
 
 function App() {
   return (
@@ -16,7 +19,9 @@ function App() {
               <Route path="Features1" element={<Content />} />
               <Route path="who" element={<Who />} />
               <Route path="*" element={<Home />} />
-              <Route path="/earth" element={<EarthComponent />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/resume" element={<Resume />} />
+              <Route path="/projects" element={<Projects />} />
               <Route path="/contact" element={<ContactForm />} />
               <Route path="/contact3d" element={<ContactForm3d />} />
           </Routes>

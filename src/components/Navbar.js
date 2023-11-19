@@ -11,7 +11,7 @@ const Navbar = () => {
         <nav className="navbar navbar-expand-lg" data-bs-theme="dark">
             <div className="container-fluid">
                 <Link className="nav-link navbar-brand" to="/">
-                    <FontAwesomeIcon className="me-2" icon={faSkullCrossbones} />Super 3D
+                    Francis Lafontaine
                 </Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false"
@@ -19,26 +19,31 @@ const Navbar = () => {
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="navbarColor01">
-                    <ul className="navbar-nav me-auto">
+                    <ul className="navbar-nav ms-auto">
                         <li className="nav-item">
                             <Link className="nav-link active" to="/">
-                                <FontAwesomeIcon className="me-1" icon={faHome} />Home
+                                <FontAwesomeIcon className="me-1" icon={faHome} />
                                 <span className="visually-hidden">(current)</span>
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/features1">
-                                Features1
+                            <Link className="nav-link" to="/about">
+                                About
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/who">
-                                Who
+                            <Link className="nav-link" to="/resume">
+                                Resume
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/earth">
-                                Earth
+                            <Link className="nav-link" to="/projects">
+                               Projects
+                            </Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="https://de-lafontaine.ca/socialbox/public/blog">
+                                Blog
                             </Link>
                         </li>
                     </ul>
